@@ -12,9 +12,92 @@
 body {
   background: url(images/pattern-background-desktop.svg) no-repeat;
   background-color: hsl(225, 100%, 94%);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 .card {
   color: hsl(224, 23%, 55%);
   background-color: white;
+  border-radius: 20px;
+
+  max-width: 450px;
+  margin: auto;
+
+  text-align: center;
+}
+
+.cover-image img {
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  color: hsl(223, 47%, 23%);
+  font-size: 28px;
+  font-weight: 900;
+}
+
+.plan {
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 10px;
+  padding: 15px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.plan-type {
+  display: flex;
+  align-items: center;
+}
+
+.plan-type > .plan-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 20px;
+}
+
+.plan-description > .plan-type-name {
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+}
+
+.plan > .change a {
+  font-weight: 700;
+  color: hsl(245, 75%, 52%);
+}
+
+.confirm {
+  background-color: hsl(245, 75%, 52%);
+  border-radius: 10px;
+  width: 100%;
+  padding: 15px 0;
+  margin: 30px 0;
+}
+
+.cancel {
+  width: 100%;
+  margin: 30px 0;
+}
+
+.confirm a {
+  color: white;
+}
+
+.cancel a {
+  color: hsl(224, 23%, 55%);
+}
+
+.confirm a,
+.cancel a {
+  text-decoration: none;
+  font-weight: 700;
 }
