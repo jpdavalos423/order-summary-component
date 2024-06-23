@@ -49,10 +49,11 @@ body {
   color: hsl(223, 47%, 23%);
   font-size: 28px;
   font-weight: 900;
+  margin: 25px 0 0px 0;
 }
 
 .header p {
-  margin: 25px 5px;
+  margin: 20px 5px;
   line-height: 1.5;
 }
 
