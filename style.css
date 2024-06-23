@@ -18,6 +18,8 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+
+  margin: 0 25px;
 }
 
 .card {
@@ -26,7 +28,7 @@ body {
   background-color: white;
   border-radius: 20px;
 
-  max-width: 450px;
+  max-width: 475px;
   margin: auto;
 
   padding-bottom: 10px;
@@ -40,8 +42,7 @@ body {
 .cover-image img {
   width: 100%;
   border-radius: 20px 20px 0px 0px;
-  margin: 0 -20px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .header h1 {
@@ -51,7 +52,8 @@ body {
 }
 
 .header p {
-  margin: 25px 0;
+  margin: 25px 5px;
+  line-height: 1.5;
 }
 
 .plan {
@@ -133,4 +135,17 @@ body {
 .cancel a {
   text-decoration: none;
   font-weight: 700;
+}
+
+@media (max-width: 425px) {
+  body {
+    background: url(images/pattern-background-mobile.svg) no-repeat;
+    background-color: hsl(225, 100%, 94%);
+  }
+  .content {
+    padding: 0 25px;
+  }
+  .plan {
+    padding: 15px;
+  }
 }
